@@ -1,0 +1,1649 @@
+[
+    {
+        "id": "588bf760.d58e38",
+        "type": "tab",
+        "label": "Alarm Panel",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "7b5509ca.9b8518",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "5",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "5",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "f6da09bf.cb3ac8",
+        "type": "join",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "20",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "1e5e16d8.0d96a9"
+            ]
+        ]
+    },
+    {
+        "id": "15a1c331.4769ad",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "2",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 179,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "46c7814c.31ad7",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "3",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 219,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "7ec8525b.ddaaac",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 4,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "4",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "68e7c4a2.672f8c",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 6,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "6",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "6",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "5d4caa97.692214",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 7,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "7",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "7",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 380,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "3dd3e011.b355e",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 8,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "8",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "8",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 420,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "1f6d1500.c56f5b",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 9,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "9",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "9",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "2f19d01c.1f518",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 10,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "*",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "*",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "31e04803.f74958",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 11,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "0",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 540,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "8d512527.c41368",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "Message Complete",
+        "rules": [
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "fb7ca68f.9faef8",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 12,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Clear",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "Clear",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 580,
+        "wires": [
+            [
+                "8d512527.c41368"
+            ]
+        ]
+    },
+    {
+        "id": "9793134.51bb5f",
+        "type": "api-current-state",
+        "z": "588bf760.d58e38",
+        "name": "Alarm State",
+        "server": "7c1fd0bf.92ab7",
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": true,
+        "entity_id": "input_boolean.notify_doors",
+        "state_type": "str",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "72925577.b7d3cc"
+            ]
+        ]
+    },
+    {
+        "id": "72925577.b7d3cc",
+        "type": "switch",
+        "z": "588bf760.d58e38",
+        "name": "Check State",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 870,
+        "y": 300,
+        "wires": [
+            [
+                "43722597.c9d91c",
+                "b432421a.9921e"
+            ],
+            [
+                "fa669103.212ac"
+            ]
+        ]
+    },
+    {
+        "id": "fa669103.212ac",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "arming",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Alarm Arming in 45 Seconds",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "armingStatus",
+                "pt": "flow",
+                "to": "arming",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "msg",
+                "to": "arming",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 480,
+        "wires": [
+            [
+                "71f5be1.b77064",
+                "89a5cfbc.0ce37",
+                "3ffa0d4e.c39612"
+            ]
+        ]
+    },
+    {
+        "id": "43722597.c9d91c",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "\"alarm disarmed\"",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Alarm Disarmed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            [
+                "736c5d81.0ecf74"
+            ]
+        ]
+    },
+    {
+        "id": "b432421a.9921e",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Disarm Alarm",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "data": "{\"entity_id\":\"input_boolean.notify_doors\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1080,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71f5be1.b77064",
+        "type": "delay",
+        "z": "588bf760.d58e38",
+        "name": "Delay 45 Seconds",
+        "pauseType": "delayv",
+        "timeout": "45",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1150,
+        "y": 440,
+        "wires": [
+            [
+                "b6927346.c82a6"
+            ]
+        ]
+    },
+    {
+        "id": "736c5d81.0ecf74",
+        "type": "ui_audio",
+        "z": "588bf760.d58e38",
+        "name": "Alarm Disarmed",
+        "group": "a31d06d.6e592f8",
+        "voice": "en-US",
+        "always": "",
+        "x": 1280,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2702fca7.bc7ec4",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Arm Alarm",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.notify_doors\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1490,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89a5cfbc.0ce37",
+        "type": "ui_text",
+        "z": "588bf760.d58e38",
+        "group": "a31d06d.6e592f8",
+        "order": 14,
+        "width": "6",
+        "height": "1",
+        "name": "Alarm Status",
+        "label": "Alarm Status:",
+        "format": "{{msg.message}}",
+        "layout": "row-spread",
+        "x": 1090,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "d6f482f0.d0d8b",
+        "type": "server-state-changed",
+        "z": "588bf760.d58e38",
+        "name": "Door Alarm",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "input_boolean.notify_doors",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "x": 680,
+        "y": 660,
+        "wires": [
+            [
+                "a6db1947.6b2428"
+            ]
+        ]
+    },
+    {
+        "id": "c359a538.4e3628",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "armingStatus",
+                "pt": "flow",
+                "to": "notArming",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6927346.c82a6",
+        "type": "switch",
+        "z": "588bf760.d58e38",
+        "name": "arming",
+        "property": "armingStatus",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "arming",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1330,
+        "y": 440,
+        "wires": [
+            [
+                "2702fca7.bc7ec4",
+                "c359a538.4e3628"
+            ]
+        ]
+    },
+    {
+        "id": "1e5e16d8.0d96a9",
+        "type": "switch",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "3417",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "3b73740f.b33c0c"
+            ]
+        ]
+    },
+    {
+        "id": "225a2b16.09db94",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "armingStatus",
+                "pt": "flow",
+                "to": "notArming",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b73740f.b33c0c",
+        "type": "switch",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "property": "armingStatus",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "arming",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "notArming",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "225a2b16.09db94",
+                "3e20904e.d567"
+            ],
+            [
+                "9793134.51bb5f"
+            ]
+        ]
+    },
+    {
+        "id": "3e20904e.d567",
+        "type": "trigger",
+        "z": "588bf760.d58e38",
+        "op1": "cancelled",
+        "op2": "off",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "3",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "name": "",
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "a6db1947.6b2428"
+            ]
+        ]
+    },
+    {
+        "id": "a6db1947.6b2428",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 660,
+        "wires": [
+            [
+                "89a5cfbc.0ce37"
+            ]
+        ]
+    },
+    {
+        "id": "3ffa0d4e.c39612",
+        "type": "ui_audio",
+        "z": "588bf760.d58e38",
+        "name": "Arming 45 Seconds",
+        "group": "a31d06d.6e592f8",
+        "voice": "en-US",
+        "always": "",
+        "x": 1190,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1794cb1e.539245",
+        "type": "inject",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "59e388e3.c0d178"
+            ]
+        ]
+    },
+    {
+        "id": "59e388e3.c0d178",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "armingStatus",
+                "pt": "flow",
+                "to": "notArming",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a12a829.718748",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "a31d06d.6e592f8",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "f6da09bf.cb3ac8"
+            ]
+        ]
+    },
+    {
+        "id": "97faeb28.7f9928",
+        "type": "ui_text",
+        "z": "588bf760.d58e38",
+        "group": "12864da0.fc59a2",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "name": "Bedroom",
+        "label": "Bedroom",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 440,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "caab8a0e.bcb428",
+        "type": "server-state-changed",
+        "z": "588bf760.d58e38",
+        "name": "Bedroom",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "binary_sensor.bedroom_occupancy",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "x": 100,
+        "y": 720,
+        "wires": [
+            [
+                "eaa4a92b.b8fcb8"
+            ]
+        ]
+    },
+    {
+        "id": "597bf408.fbfb6c",
+        "type": "ui_text",
+        "z": "588bf760.d58e38",
+        "group": "12864da0.fc59a2",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "name": "Office",
+        "label": "Office",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 430,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "8442338.1fe56d",
+        "type": "server-state-changed",
+        "z": "588bf760.d58e38",
+        "name": "Office",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "binary_sensor.office_occupancy",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "x": 90,
+        "y": 760,
+        "wires": [
+            [
+                "568193f8.8cfe7c"
+            ]
+        ]
+    },
+    {
+        "id": "5ccfbc1c.83b7b4",
+        "type": "ui_text",
+        "z": "588bf760.d58e38",
+        "group": "12864da0.fc59a2",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "name": "Kitchen",
+        "label": "Kitchen",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 440,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "557c8a04.990264",
+        "type": "server-state-changed",
+        "z": "588bf760.d58e38",
+        "name": "Kitchen",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "binary_sensor.kitchen_occupancy",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "x": 90,
+        "y": 800,
+        "wires": [
+            [
+                "dab0f0cd.50773"
+            ]
+        ]
+    },
+    {
+        "id": "eaa4a92b.b8fcb8",
+        "type": "function",
+        "z": "588bf760.d58e38",
+        "name": "Change It",
+        "func": "if(msg.payload == \"off\")\n{\n    msg.payload = \"Empty\";\n}\nif(msg.payload == \"on\")\n{\n    msg.payload = \"Occupied\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "97faeb28.7f9928"
+            ]
+        ]
+    },
+    {
+        "id": "568193f8.8cfe7c",
+        "type": "function",
+        "z": "588bf760.d58e38",
+        "name": "Change It",
+        "func": "if(msg.payload == \"off\")\n{\n    msg.payload = \"Empty\";\n}\nif(msg.payload == \"on\")\n{\n    msg.payload = \"Occupied\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 760,
+        "wires": [
+            [
+                "597bf408.fbfb6c"
+            ]
+        ]
+    },
+    {
+        "id": "dab0f0cd.50773",
+        "type": "function",
+        "z": "588bf760.d58e38",
+        "name": "Change It",
+        "func": "if(msg.payload == \"off\")\n{\n    msg.payload = \"Empty\";\n}\nif(msg.payload == \"on\")\n{\n    msg.payload = \"Occupied\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 800,
+        "wires": [
+            [
+                "5ccfbc1c.83b7b4"
+            ]
+        ]
+    },
+    {
+        "id": "56c39a5d.0a2fc4",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Bedroom Lights",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.bedroom\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 340,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a66838e1.79cfe8",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Hallway Lights",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.hallway\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 340,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1a7aeb8.3cfcf",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Office Lights",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.office\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 330,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fe6cd54.c906a4",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Living Room Lights",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.bedroom\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 350,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3f97d90.d9924",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "50671020.7e51c",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Living Room",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "toggle",
+        "payloadType": "str",
+        "topic": "",
+        "x": 120,
+        "y": 1060,
+        "wires": [
+            [
+                "6fe6cd54.c906a4"
+            ]
+        ]
+    },
+    {
+        "id": "f0fcd6f9.d54338",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Christmas",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "switch",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"switch.christmas_tree\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 320,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10b1e808.57e3b8",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "50671020.7e51c",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Christmas",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "toggle",
+        "payloadType": "str",
+        "topic": "",
+        "x": 110,
+        "y": 1100,
+        "wires": [
+            [
+                "f0fcd6f9.d54338",
+                "9b273d19.7b804"
+            ]
+        ]
+    },
+    {
+        "id": "9df002b1.1e7f",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Dining Room Lights",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.dining_room\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 350,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49895ea0.83aff",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "50671020.7e51c",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Dining",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "toggle",
+        "payloadType": "str",
+        "topic": "",
+        "x": 100,
+        "y": 1180,
+        "wires": [
+            [
+                "9df002b1.1e7f"
+            ]
+        ]
+    },
+    {
+        "id": "9b273d19.7b804",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Christmas",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "switch",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"switch.garland_light\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 320,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb67b573.ff1ae8",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Kitchen Lights",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.kitchen\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 340,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f57c860f.c6d848",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "50671020.7e51c",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Kitchen",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "toggle",
+        "payloadType": "str",
+        "topic": "",
+        "x": 110,
+        "y": 1220,
+        "wires": [
+            [
+                "fb67b573.ff1ae8"
+            ]
+        ]
+    },
+    {
+        "id": "8411f97d.c23ac8",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Garage Light",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "light",
+        "service": "toggle",
+        "data": "{\"entity_id\":\"light.garage\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 330,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6bccde7.9b60b2",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "50671020.7e51c",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Garage",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "toggle",
+        "payloadType": "str",
+        "topic": "",
+        "x": 110,
+        "y": 1260,
+        "wires": [
+            [
+                "8411f97d.c23ac8"
+            ]
+        ]
+    },
+    {
+        "id": "dd012449.4d9d58",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "Good Night",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.good_night\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 1010,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "523d80ac.918d1",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "9ca4fe98.8d14d",
+        "order": 1,
+        "width": "4",
+        "height": "2",
+        "passthru": false,
+        "label": "Good Night",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "turn_on",
+        "payloadType": "str",
+        "topic": "",
+        "x": 600,
+        "y": 860,
+        "wires": [
+            [
+                "8cfb60d3.9b719",
+                "277c28d9.2e6408"
+            ]
+        ]
+    },
+    {
+        "id": "8cfb60d3.9b719",
+        "type": "delay",
+        "z": "588bf760.d58e38",
+        "name": "Delay 1 Minute",
+        "pauseType": "delayv",
+        "timeout": "1",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 800,
+        "y": 860,
+        "wires": [
+            [
+                "dd012449.4d9d58"
+            ]
+        ]
+    },
+    {
+        "id": "9e2d342a.ba97c8",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "TV Time",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.watch_apple_tv\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 780,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c14699c.aac358",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "9ca4fe98.8d14d",
+        "order": 1,
+        "width": "4",
+        "height": "2",
+        "passthru": false,
+        "label": "Watch TV",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "turn_on",
+        "payloadType": "str",
+        "topic": "",
+        "x": 590,
+        "y": 900,
+        "wires": [
+            [
+                "9e2d342a.ba97c8"
+            ]
+        ]
+    },
+    {
+        "id": "e0b4f71e.fee398",
+        "type": "ui_audio",
+        "z": "588bf760.d58e38",
+        "name": "Lights Out",
+        "group": "a31d06d.6e592f8",
+        "voice": "en-US",
+        "always": "",
+        "x": 1010,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "277c28d9.2e6408",
+        "type": "change",
+        "z": "588bf760.d58e38",
+        "name": "lights out",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Lights Out in one minute",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 820,
+        "wires": [
+            [
+                "e0b4f71e.fee398"
+            ]
+        ]
+    },
+    {
+        "id": "13c5ba64.ba6d36",
+        "type": "api-call-service",
+        "z": "588bf760.d58e38",
+        "name": "TV OFF",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.turn_off_tv\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 780,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80d37bb2.72ac38",
+        "type": "ui_button",
+        "z": "588bf760.d58e38",
+        "name": "",
+        "group": "9ca4fe98.8d14d",
+        "order": 1,
+        "width": "4",
+        "height": "2",
+        "passthru": false,
+        "label": "Turn Off TV",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "turn_on",
+        "payloadType": "str",
+        "topic": "",
+        "x": 600,
+        "y": 940,
+        "wires": [
+            [
+                "13c5ba64.ba6d36"
+            ]
+        ]
+    },
+    {
+        "id": "d42b64b1.96df98",
+        "type": "ui_switch",
+        "z": "588bf760.d58e38",
+        "name": "Bedroom Lights",
+        "label": "Bedroom",
+        "tooltip": "",
+        "group": "50671020.7e51c",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 120,
+        "y": 860,
+        "wires": [
+            [
+                "56c39a5d.0a2fc4"
+            ]
+        ]
+    },
+    {
+        "id": "83456453.fd1558",
+        "type": "ui_switch",
+        "z": "588bf760.d58e38",
+        "name": "Hallway Lights",
+        "label": "Hallway",
+        "tooltip": "",
+        "group": "50671020.7e51c",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 120,
+        "y": 980,
+        "wires": [
+            [
+                "a66838e1.79cfe8"
+            ]
+        ]
+    },
+    {
+        "id": "1f8b2b18.31c335",
+        "type": "ui_switch",
+        "z": "588bf760.d58e38",
+        "name": "Office Lights",
+        "label": "Office",
+        "tooltip": "",
+        "group": "50671020.7e51c",
+        "order": 8,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 110,
+        "y": 1020,
+        "wires": [
+            [
+                "e1a7aeb8.3cfcf"
+            ]
+        ]
+    },
+    {
+        "id": "a31d06d.6e592f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Keypad",
+        "tab": "cc30357f.4da7b8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7c1fd0bf.92ab7",
+        "type": "server",
+        "z": "",
+        "name": "Home Assistant",
+        "legacy": false,
+        "hassio": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open"
+    },
+    {
+        "id": "12864da0.fc59a2",
+        "type": "ui_group",
+        "z": "",
+        "name": "Occupancy",
+        "tab": "cc30357f.4da7b8",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "50671020.7e51c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Lights",
+        "tab": "cc30357f.4da7b8",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "9ca4fe98.8d14d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Scenes",
+        "tab": "cc30357f.4da7b8",
+        "order": 4,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "cc30357f.4da7b8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Alarm Panel",
+        "icon": "dashboard",
+        "order": 1
+    }
+]
