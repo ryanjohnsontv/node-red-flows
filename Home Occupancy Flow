@@ -1,0 +1,403 @@
+[
+    {
+        "id": "c53b8340.2a3d2",
+        "type": "tab",
+        "label": "Home Occupancy",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b3e375c3.d71f88",
+        "type": "server-state-changed",
+        "z": "c53b8340.2a3d2",
+        "name": "Ryan Home",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "input_boolean.ryan_home",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "bfb1901f.bd26d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "63d9380b.f77b98",
+        "type": "server-state-changed",
+        "z": "c53b8340.2a3d2",
+        "name": "Victoria Home",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "input_boolean.victoria_home",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "off",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "x": 250,
+        "y": 580,
+        "wires": [
+            [
+                "bfb1901f.bd26d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a5b0e258.bc13",
+        "type": "server-state-changed",
+        "z": "c53b8340.2a3d2",
+        "name": "Ryan Home",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "input_boolean.ryan_home",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "1cb2a49.07e145b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1bc06b1c.2e5145",
+        "type": "server-state-changed",
+        "z": "c53b8340.2a3d2",
+        "name": "Victoria Home",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "input_boolean.victoria_home",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "67af4322.be659c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bfb1901f.bd26d",
+        "type": "api-call-service",
+        "z": "c53b8340.2a3d2",
+        "name": "Home",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.home_occupied\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 480,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1cb2a49.07e145b",
+        "type": "api-current-state",
+        "z": "c53b8340.2a3d2",
+        "name": "Victoria Home",
+        "server": "7c1fd0bf.92ab7",
+        "version": 0,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": true,
+        "entity_id": "input_boolean.victoria_home",
+        "state_type": "str",
+        "override_payload": true,
+        "override_data": true,
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "49d8d533.42f6dc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "67af4322.be659c",
+        "type": "api-current-state",
+        "z": "c53b8340.2a3d2",
+        "name": "Ryan Home",
+        "server": "7c1fd0bf.92ab7",
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": true,
+        "entity_id": "input_boolean.ryan_home",
+        "state_type": "str",
+        "override_payload": true,
+        "override_data": true,
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "49d8d533.42f6dc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "49d8d533.42f6dc",
+        "type": "api-current-state",
+        "z": "c53b8340.2a3d2",
+        "name": "House Guests",
+        "server": "7c1fd0bf.92ab7",
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": true,
+        "entity_id": "input_boolean.house_guests",
+        "state_type": "str",
+        "override_payload": true,
+        "override_data": true,
+        "x": 640,
+        "y": 360,
+        "wires": [
+            [
+                "32b7e2c5.d0f63e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "32b7e2c5.d0f63e",
+        "type": "api-call-service",
+        "z": "c53b8340.2a3d2",
+        "name": "Away",
+        "server": "7c1fd0bf.92ab7",
+        "version": "1",
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "entityId": "input_boolean.home_occupied",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "mustacheAltTags": false,
+        "x": 850,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59678c45.862534",
+        "type": "server-state-changed",
+        "z": "c53b8340.2a3d2",
+        "name": "Ryan Location",
+        "server": "7c1fd0bf.92ab7",
+        "entityidfilter": "device_tracker.ryansiphone",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "x": 250,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "adc67532.d4fa98",
+        "type": "switch",
+        "z": "c53b8340.2a3d2",
+        "name": "Location",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "home",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "f3732924.35caf8"
+            ],
+            [
+                "4a341c2d.5167a4"
+            ]
+        ]
+    },
+    {
+        "id": "f3732924.35caf8",
+        "type": "api-call-service",
+        "z": "c53b8340.2a3d2",
+        "name": "Ryan Home",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.ryan_home\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 610,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a341c2d.5167a4",
+        "type": "api-call-service",
+        "z": "c53b8340.2a3d2",
+        "name": "Ryan Away",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "data": "{\"entity_id\":\"input_boolean.ryan_home\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 610,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ac869e5.bc6038",
+        "type": "server-state-changed",
+        "z": "c53b8340.2a3d2",
+        "name": "Victoria Location",
+        "server": "7c1fd0bf.92ab7",
+        "version": 0,
+        "entityidfilter": "device_tracker.victoriasiphone",
+        "entityidfiltertype": "substring",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "x": 260,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7772e6a6.e145b8",
+        "type": "switch",
+        "z": "c53b8340.2a3d2",
+        "name": "Location",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "home",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "home",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "d8f87daa.acefd"
+            ],
+            [
+                "c58fd4d4.44a078"
+            ]
+        ]
+    },
+    {
+        "id": "d8f87daa.acefd",
+        "type": "api-call-service",
+        "z": "c53b8340.2a3d2",
+        "name": "Victoria Home",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.victoria_home\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 620,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c58fd4d4.44a078",
+        "type": "api-call-service",
+        "z": "c53b8340.2a3d2",
+        "name": "Victoria Away",
+        "server": "7c1fd0bf.92ab7",
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "data": "{\"entity_id\":\"input_boolean.victoria_home\"}",
+        "mergecontext": "",
+        "output_location": "payload",
+        "output_location_type": "msg",
+        "x": 620,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c1fd0bf.92ab7",
+        "type": "server",
+        "z": "",
+        "name": "Home Assistant",
+        "legacy": false,
+        "hassio": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open"
+    }
+]
